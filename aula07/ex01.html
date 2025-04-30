@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 7 javascript </title>
+</head>
+<body>
+    <h1>Operadores em JavaScript (parte 1)</h1>
+
+    <div>
+        <h2>Operadores Aritméticos</h2>
+
+        <p>Os operadores aritméticos são usados para realizar operações matemáticas básicas.</p>
+        <ul>
+            <li><strong>Soma (+)</strong>: Adiciona dois números.</li>
+            <li><strong>Subtração (-)</strong>: Subtrai um número de outro.</li>
+            <li><strong>Multiplicação (*)</strong>: Multiplica dois números.</li>
+            <li><strong>Divisão (/)</strong>: Divide um número por outro.</li>
+            <li><strong>Módulo (%)</strong>: Retorna o resto da divisão entre dois números.</li>
+            <li><strong>Exponenciação (**)</strong>: Eleva um número a uma potência.</li>
+        </ul>
+        <p>Exemplo:</p>
+        <pre>
+            let a = 5 + 3; // 8
+            let b = a % 5; // 3
+            let c = a * b ** 2; // 45
+            let d = 10 - a / 2; // 6
+            let e = 6 * 2 / d; // 2
+            let f = b % e + 4 / e; // 3
+
+            ordem de precedência:
+
+            1. Exponenciação (**)
+            2. Módulo (%) e Multiplicação (*) e Divisão (/)
+            3. Adição (+) e Subtração (-)
+
+            auto-atribuições:
+            let x = 10; // 10
+            x += 5; // x = x + 5; // 15 
+            x -= 3; // x = x - 3; // 12
+            x *= 2; // x = x * 2; // 24
+            x /= 4; // x = x / 4; // 6
+            x %= 2; // x = x % 2; // 0
+            x **= 3; // x = x ** 3; // 0
+
+            Incremento e Decremento:
+            let x = 0; // 0
+            x++; // x = x + 1; // 1
+            x--; // x = x - 1; // 0
+        </pre>
+
+        <p>Exemplo de uso (soma):</p>
+        <pre>
+            let num1 = 10;
+            let num2 = 5;
+            let resultado = num1 + num2;
+
+            console.log("Resultado da soma: " + resultado); // Resultado da soma: 15
+        </pre>
+
+        <p>Exemplo de uso (subtração):</p>
+        <pre>
+            let num1 = 10;
+            let num2 = 5;
+            let resultado = num1 - num2;
+
+            console.log("Resultado da subtração: " + resultado); // Resultado da subtração: 5
+        </pre>
+
+        <p>Exemplo de uso (multiplicação):</p>
+        <pre>
+            let num1 = 10;
+            let num2 = 5;
+            let resultado = num1 * num2;
+
+            console.log("Resultado da multiplicação: " + resultado); // Resultado da multiplicação: 50
+        </pre>
+
+        <p>Exemplo de uso (divisão):</p>
+        <pre>
+            let num1 = 10;
+            let num2 = 5;
+            let resultado = num1 / num2;
+
+            console.log("Resultado da divisão: " + resultado); // Resultado da divisão: 2
+        </pre>
+
+
+        <p>Exemplo de uso (módulo):</p>
+        <pre>
+            let num1 = 10;
+            let num2 = 3;
+            let resultado = num1 % num2;
+
+            console.log("Resto da divisão: " + resultado); // Resto da divisão: 1
+        </pre>
+
+        <p>Exemplo de uso (exponenciação):</p>
+        <pre>
+            let base = 2;
+            let expoente = 3;
+            let resultado = base ** expoente;
+
+            console.log("Resultado da exponenciação: " + resultado); // Resultado da exponenciação: 8
+        </pre>
+
+        <p>Exemplo de uso (auto-atribuição):</p>
+        <pre>
+            let x = 10;
+            x += 5; // x = x + 5; // 15
+            console.log("Resultado da auto-atribuição: " + x); // Resultado da auto-atribuição: 15
+        </pre>
+
+        <p>Exemplo de uso (incremento e decremento):</p>
+        <pre>
+            let x = 0;
+            x++; // x = x + 1; // 1
+            console.log("Resultado do incremento: " + x); // Resultado do incremento: 1
+
+            x--; // x = x - 1; // 0
+            console.log("Resultado do decremento: " + x); // Resultado do decremento: 0
+        </pre>
+
+        
+    </div>
+</body>
+</html>

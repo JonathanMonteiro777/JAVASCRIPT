@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04 JavaScript</title>
+
+    <style>
+        /* comentario em css */
+        body {
+            background-color: rgb(117, 111, 111);
+            font: normal 25px Arial;
+        }
+    </style>
+</head>
+<body>
+   
+    <script>
+        /* Aprendendo algumas funções para formatar e exibir strings */
+       var nome = window.prompt('Qual é seu nome?')
+       document.write(`Ola <strong>${nome}</strong>, seu nome tem ${nome.length} letras<br>`)
+
+       document.writeln(`Seu nome em maiusculas é ${nome.toUpperCase()}<br>`)
+       
+       document.writeln(`Seu nome em letras minusculas é ${nome.toLowerCase()}`)
+
+    </script>
+</body>
+</html>

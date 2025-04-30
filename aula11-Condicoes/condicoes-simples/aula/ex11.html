@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições em JavaScript</title>
+    <link rel="stylesheet" href="ex11.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="titulo-cabecalho"> Condições em JavaScript</h1>
+    </header>
+    <main class="conteudo-principal">
+        <section class="secao-apresentacao">
+        <h2 class="titulo-apresentacao">Estruturas de controle no JavaScript</h2>
+        <p class="paragrafo-conteudo">As estruturas de controle são fundamentais para a lógica de programação. Elas permitem que você tome decisões com base em condições específicas.</p>
+        <p class="paragrafo-conteudo">Neste exemplo, vamos explorar as estruturas de controle mais comuns: if, else if e else.</p>
+        <p class="paragrafo-conteudo">A estrutura if é usada para executar um bloco de código se uma condição for verdadeira. O else if permite verificar várias condições, e o else é executado se nenhuma das condições anteriores for verdadeira.</p>    
+        <p class="paragrafo-conteudo">Vamos ver um exemplo prático de como usar essas estruturas de controle em JavaScript.</p>
+        </section>
+
+       <section class="secao-exercicios">
+        <h2 class="titulo-exercicios">Exercícios</h2>
+        <p class="paragrafo-conteudo">Resolva os exercícios abaixo para praticar o uso de condições em JavaScript.</p>
+        <ul class="lista-exercicios">
+            <li class="item-exercicio">Exercício 1: Crie um programa que verifique se o veículo utrapassou o limite de velocidade.</li>
+            <li class="item-exercicio">Exercício 2: Crie um programa que verifica se a pessoa mora no brasil, ou se ela é estrageira.</li>
+            <li class="item-exercicio">Exercício 3: Crie um programa que verifique se uma pessoa é maior de idade (18 anos).</li>
+        </ul>
+       </section>
+        <section class="exercicio-1">
+            <h2 class="titulo-exercicios">Exercício 1</h2>
+            <h3 class="titulo-solucoes">Sistema de Multas</h3>
+            <p class="paragrafo-conteudo">O sistema de multas deve verificar se o veículo ultrapassou o limite de velocidade e calcular o valor da multa caso o veiculo tenha exedido a velocidade permitida.</p>
+            <p class="paragrafo-conteudo">O limite de velocidade é de 60 km/h e a multa é de R$ 5,00 para cada km/h acima do limite.</p>
+             
+            <div class="div-exercicio-1">
+            <label for="velocidade">Velocidade do carro:</label>
+            <input type="number" id="velocidade" placeholder="Digite a velocidade em km/h"> km/h
+            <input type="button" value="Verificar" id="btnverificar1" onclick="calcular()">
+            <div id="resultado1"></div>
+            </div>
+           
+        </section>
+        <!-- Exercicio 2 -->
+        <section class="exercicio-2">
+            <h2 class="titulo-exercicios">Exercício 2</h2>
+            <h3 class="titulo-solucoes">Verificação de Nacionalidade</h3>
+            <p class="paragrafo-conteudo">O sistema deve verificar se a pessoa mora no Brasil ou se ela é estrangeira.</p>
+            <p class="paragrafo-conteudo">Se a pessoa for brasileira, exiba uma mensagem informando que ela é brasileira. Caso contrário, exiba uma mensagem informando que ela é estrangeira.</p>
+            <p class="paragrafo-conteudo">A nacionalidade deve ser informada pelo usuário.</p>
+
+            <div class="div-exercicio-2">
+            <label for="nacionalidade">Digite sua nacionalidade:</label>
+            <input type="text" id="nacionalidade" placeholder="Digite sua nacionalidade">
+            <input type="button" value="Verificar" id="tbn" onclick="verificar()" title="Clique para verificar sua nacionalidade" placeholder="Clique para verificar">
+            <div id="resultado2"></div>
+            </div>
+        </section>
+        <!-- Exercicio 3 -->
+        <section class="exercicio-3">
+            <h2 class="titulo-exercicios">Exercício 3</h2>
+            <h3 class="titulo-solucoes">Verificação de Maioridade</h3>
+            <p class="paragrafo-conteudo">O sistema deve verificar se a pessoa é maior de idade (18 anos).</p>
+            <p class="paragrafo-conteudo">Se a pessoa for maior de idade, exiba uma mensagem informando que ela é maior de idade. Caso contrário, exiba uma mensagem informando que ela é menor de idade.</p>
+            <p class="paragrafo-conteudo">A idade deve ser informada pelo usuário.</p>
+
+            <div class="div-exercicio-3">
+            <label for="idade">Digite sua idade:</label>
+            <input type="number" id="idade" placeholder="Digite sua idade">
+            <input type="button" value="Verificar" id="btnverificar3" onclick="verificarIdade()" title="Clique para verificar sua idade" placeholder="Clique para verificar">
+            <div id="maiorIdade"></div>
+            </div>
+
+    </main>
+    <footer class="rodape">
+        <div class="rodape">
+            <p class="paragrafo-conteudo">Desenvolvido por Jonathan Monteiro - 2025</p>
+            <p class="paragrafo-conteudo">Aula 11 - Estruturas de Controle</p>
+            <p class="paragrafo-conteudo">Curso de JavaScript - Curso em Video</p>
+        </div>
+     </footer>
+    <script src="ex11.js"></script>
+</body>
+</html>

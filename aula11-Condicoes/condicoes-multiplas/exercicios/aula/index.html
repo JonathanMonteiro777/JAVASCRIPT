@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições Multiplas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1 class="titulo-cabecalho">Condições Multiplas</h1>
+    </header>
+
+    <main class="corpo-principal">
+        <section class="secao-principal">
+            <h2 class="titulo-principal">Aprendendo sobre condições multiplas</h2>
+            <p class="texto-conteudo">As condições múltiplas são uma forma de controlar o fluxo de execução do código
+                com base em várias
+                condições. Elas permitem que você execute diferentes blocos de código dependendo do valor de uma
+                variável ou expressão.</p>
+            <p class="texto-conteudo">Por exemplo, você pode usar uma estrutura de controle como o <code>switch</code>
+                para verificar o valor
+                de uma variável e executar diferentes blocos de código com base nesse valor.</p>
+            <h3 class="sub-titulo">Sintaxe da Estrutura Switch.</h3>
+            <p class="texto-conteudo">A sintaxe básica da estrutura switch é a seguinte:</p>
+            <div class="">
+                <pre><code>switch (expressão) {
+        case valor1:
+             // Código a ser executado se a expressão for igual a valor1 
+              break;
+        case valor2:
+             // Código a ser executado se a expressão for igual a valor2
+             break;
+             // ... mais casos conforme necessário
+        default:
+             // Código a ser executado se nenhum dos casos acima for atendido
+             break;
+             }</code></pre>
+            </div>
+            <p class="texto-conteudo">O <code>break</code> é usado para interromper a execução do restante dos casos no
+                <code>switch</code>
+                após encontrar uma correspondência.
+            </p>
+
+            <p class="texto-conteudo">O bloco de código correspondente ao primeiro caso que corresponder à expressão
+                será executado. Se nenhum
+                caso corresponder, o bloco de código no <code>default</code> será executado.</p>
+        </section>
+        <!--Seção de Exercícios -->
+        <section class="secao-exercicios">
+            <h2 class="titulo-principal">Exercícios</h2>
+            <p class="texto-conteudo">Agora é sua vez de praticar! Tente resolver os seguintes exercícios:</p>
+            <ol class="lista-exercicios">
+
+                <li class="item-lista"><strong>Sistema de Navegação por Abas:</strong> <br>Imagine que você está
+                    desenvolvendo uma interface de usuário com diferentes abas de conteúdo. Ao clicar em uma aba, o
+                    conteúdo correspondente deve ser exibido, enquanto o conteúdo das outras abas fica oculto. Cada aba
+                    pode ser identificada por um valor específico (por exemplo, "home", "produtos", "servicos",
+                    "contato"). O sistema precisa verificar qual aba foi clicada e, com base nessa informação, manipular
+                    a visibilidade dos diferentes blocos de conteúdo. </li>
+
+                <li class="item-lista"><strong>Processamento de Comandos de Texto em um Jogo:</strong> <br>Em um jogo de
+                    aventura baseado em texto, o jogador pode digitar comandos como "ir norte", "pegar item", "examinar
+                    objeto". O sistema precisa interpretar o primeiro verbo do comando para determinar qual ação
+                    realizar. Por exemplo, se o jogador digita algo que começa com "ir", o sistema precisa verificar a
+                    direção ("norte", "sul", "leste", "oeste") e atualizar a localização do jogador. Se começa com
+                    "pegar", precisa identificar o item a ser pego e adicioná-lo ao inventário. A lógica para cada verbo
+                    (ir, pegar, examinar, etc.) é diferente.</li>
+                <li class="item-lista"><strong>Conversão de Códigos de Status HTTP em Mensagens Informativas:</strong>
+                    <br>Ao interagir com uma API web, você frequentemente recebe códigos de status HTTP como resposta
+                    (por exemplo, 200, 404, 500). Para fornecer uma melhor experiência ao usuário, você quer exibir
+                    mensagens mais amigáveis e informativas com base nesses códigos. Por exemplo, se o código for 200,
+                    exibir "Sucesso: A operação foi concluída com êxito". Se for 404, exibir "Erro: Recurso não
+                    encontrado". Se for 500, exibir "Erro no Servidor: Algo deu errado no servidor. Tente novamente mais
+                    tarde". O sistema precisa receber o código de status e, dependendo do seu valor, exibir a mensagem
+                    correspondente.</li>
+            </ol>
+            <p class="texto-conteudo">Nesses três exemplos, a estrutura switch seria uma forma clara e organizada de
+                lidar com as diferentes possibilidades (abas clicadas, comandos digitados, códigos de status recebidos)
+                e executar o bloco de código apropriado para cada caso. Cada case no switch corresponderia a uma das
+                opções, tornando o código mais legível do que uma longa sequência de if-else if-else.</p>
+            <p class="texto-conteudo">Lembre-se de testar seu código e verificar se ele funciona corretamente.</p>
+
+    </main>
+
+    <footer class="rodape">
+        <p class="texto-rodape">Desenvolvido por Jonathan Monteiro - Curso em Video</p>
+        <p class="texto-rodape">Aula 11 - Condições Múltiplas</p>
+    </footer>
+
+</body>
+
+</html>

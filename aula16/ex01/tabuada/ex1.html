@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex1.css">
+    <title>A nalizador de numeros</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Analizador de numeros
+        </h1>
+    </header>
+
+    <section>
+        <div>
+            Numero (entre 1 a 100):
+            <input type="number" name="fnum" id="fnum" title="Digite um número entre 1 e 100" placeholder="Ex: 25">
+            <input type="button" value="adicionar" onclick="adicionar()">
+            <br>
+            <label for="flista">Lista de números:</label>
+            <br><select name="flista" id="flista" size="6"></select>
+            <br><button type="button" value="finalizar" onclick="finalizar()">Finalizar</button>
+
+        </div>
+        <div id="res"></div>
+    </section>
+
+
+    <footer>
+
+    </footer>
+
+    <script src="ex1.js"></script>
+</body>
+
+</html>

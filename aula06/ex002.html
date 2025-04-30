@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04 JavaScript</title>
+
+    <style>
+        /* comentario em css */
+        body {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-family: sans-serif;
+            font-size: 1.2em;
+            text-align: center;
+        }
+        h1 {
+            color: rgb(0, 255, 0);
+        }
+        h1 .nav-conteudo {
+            background: '#000';
+            color: '#fff';
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 1.5em;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="curso-intro">
+        <h1>Curso de JavaScript</h1>
+         <p>Aprenda a programar em JavaScript com este curso introdutório.</p>
+        <div id="curso-intro-conteudo">
+           <p>Bem-vindo ao curso de JavaScript!</p>
+           <p>JavaScript é uma linguagem de programação amplamente utilizada para desenvolvimento web.</p>
+           <p>Este curso é voltado para iniciantes e abrange os conceitos  básicos da linguagem.</p>
+           <p>Ao final do curso, você terá uma compreensão sólida dos fundamentos do JavaScript.</p>
+           <p>Vamos começar!</p>
+           <p>O curso é dividido em módulos, cada um abordando um tópico específico.</p>
+           <p>Você pode navegar entre os módulos usando o menu de navegação abaixo.</p>
+         </div>
+
+        <div id="curso-conteudo">
+        <h2>Conteúdo do Curso</h2>
+            <p>O curso abrange os seguintes tópicos:</p>
+            <nav id="nav-conteudo">
+            <ul>
+                <li><a href="#comandos-saida">Comandos de Saída</a></li>
+                <li><a href="#variaveis">Variáveis e Tipos de Dados</a></li>
+                <li><a href="#operadores">Operadores Aritméticos e Relacionais</a></li>
+                <li><a href="#estruturas-controle">Estruturas de Controle</a></li>
+                <li><a href="#funcoes-objetos">Funções e Objetos</a></li>
+                <li><a href="#manipulacao-dom">Manipulação do DOM</a></li>
+            </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div id="curso-apresentacao">
+        <h2>Apresentação do Curso</h2>
+            <p>Bem-vindo ao curso de JavaScript!</p>
+
+            <p>Este curso foi desenvolvido para iniciantes que desejam aprender a programar em JavaScript.</p>
+            <p>JavaScript é uma linguagem de programação amplamente utilizada para desenvolvimento web.</p>
+            <p>Com o JavaScript, você pode criar páginas web interativas e dinâmicas.</p>   
+            <p>O curso é dividido em módulos, cada um abordando um tópico específico.</p>
+            <p>Você aprenderá desde os conceitos básicos até tópicos mais avançados.</p>
+     </div>
+
+    <div id="curso-objetivos">
+        <h2>Objetivos do Curso</h2>
+          <p>O objetivo deste curso é fornecer uma introdução ao JavaScript e suas principais funcionalidades.</p>
+          <p>Ao final do curso, você será capaz de:</p>
+         <ul>
+             <li>Compreender os conceitos básicos de JavaScript.</li>
+             <li>Criar scripts interativos para páginas web.</li>
+             <li>Manipular o DOM (Document Object Model).</li>
+             <li>Utilizar funções e objetos em JavaScript.</li>
+          </ul>
+     <div id="curso-objetivos-conteudo">
+         <p>O curso é voltado para iniciantes e não requer conhecimentos prévios em programação.</p>
+         <p>Você aprenderá os conceitos fundamentais de forma prática e didática.</p>    
+         <p>Ao longo do curso, você terá a oportunidade de praticar os conceitos aprendidos.</p>
+         <p>Serão apresentados exercícios práticos para fixação do conteúdo.</p>
+         <p>Além disso, você terá acesso a materiais complementares e  recursos adicionais.</p>
+         <p>Esperamos que você aproveite o curso e aprenda muito sobre JavaScript!</p>
+     </div>
+
+    </div>
+    
+    <div id="sintaxe-js">
+        <h2>Sintaxe do JavaScript</h2>
+
+        <div id="sintaxe-conteudo">
+          <p>A sintaxe do JavaScript é a forma como os comandos e instruções são escritos.</p>
+          <p>JavaScript é uma linguagem de programação baseada em objetos e eventos.</p>
+           <p>Os comandos são escritos em texto simples e podem ser executados em um navegador web.</p>
+          <p>A sintaxe do JavaScript é semelhante à de outras linguagens de programação, como C e Java.</p>
+          <p>Os comandos são compostos por palavras-chave, operadores, variáveis e funções.</p>
+          <p>Os comandos podem ser escritos em uma única linha ou em várias linhas.</p>
+          <p>Os comandos são separados por ponto e vírgula (;).</p>
+          <p>Os comandos podem ser agrupados em blocos usando chaves ({ e }). </p>
+          <p>Os comandos podem ser escritos em qualquer ordem, mas é recomendável seguir uma estrutura lógica.</p>
+           <p>Os comandos podem ser comentados usando a sintaxe de comentários do JavaScript.</p>
+        </div>
+        <div id="sintaxe-comentarios">
+         <h4>Comentários</h4>
+           <p>Os comentários são usados para documentar o código e podem ser escritos em uma ou várias linhas.</p>
+           <p>Os comentários de uma linha começam com duas barras (//) e os comentários de várias linhas são delimitados por /* e */.</p>
+          <p>Os comentários são ignorados pelo interpretador JavaScript e não afetam a execução do código.</p>
+
+          <p>Exemplo de comentário de uma linha:</p>
+                 <div class="exemplo-comentario">
+                 <pre>// Este é um comentário de uma linha</pre>
+                 </div>
+          <p>Exemplo de comentário de várias linhas:</p>
+                 <div class="exemplo-comentario">
+                 <pre>/* Este é um comentário de várias linhas. 
+                  Este comentário pode ocupar várias linhas */</pre>
+                 </div>
+            <p>Os comentários são úteis para explicar o código e facilitar a leitura e manutenção do mesmo.</p>
+        </div>
+
+        <div>
+         <p>Os comandos JavaScript podem ser escritos diretamente em um arquivo HTML ou em um arquivo separado com a extensão .js.</p>
+         <p>Para incluir um arquivo JavaScript em um arquivo HTML, use a tag &lt;script&gt;.</p>
+
+         <p>Exemplo de inclusão de um arquivo JavaScript:</p>
+                 <div class="exemplo-comentario">
+                 <pre>&lt;script src="script.js"&gt;&lt;/script&gt;</pre>
+                 </div>
+
+         <p>Os comandos JavaScript podem ser executados quando a página é carregada ou em resposta a eventos, como cliques de mouse ou pressionamento de teclas.</p>
+
+         <p>Os eventos podem ser associados a elementos HTML usando atributos, como onclick, onmouseover e onkeydown.</p>
+             <p>Exemplo de evento onclick:</p>
+                 <div class="exemplo-comentario">
+                 <pre>&lt;button onclick="alert('Botão clicado!')"&gt;Clique aqui&lt;/button&gt;</pre>
+                 </div>
+
+         <p>Quando o botão é clicado, a função alert() é chamada e exibe uma mensagem de alerta.</p> 
+         <p>Os eventos também podem ser associados a elementos HTML usando o método addEventListener().</p>
+             <p>Exemplo de uso do método addEventListener():</p>
+                    <div class="exemplo-comentario">
+                    <pre>&lt;button id="meuBotao"&gt;Clique aqui&lt;/button&gt;</pre>
+                    </div>
+                    <div class="exemplo-comentario">
+                    <pre>document.getElementById("meuBotao").addEventListener("click", function() {alert("Botão clicado!");});</pre>
+                    </div>
+        </div>
+
+    <div id="comandos-saida">
+        <h4>Comandos de Saída</h4>
+             <p>Os comandos de saída do JavaScript são usados para exibir mensagens na tela do usuário.</p>
+             <ul>
+             <li><strong>alert()</strong>: Exibe uma caixa de alerta com uma mensagem.</li>
+             <li><strong>confirm()</strong>: Exibe uma caixa de confirmação com uma mensagem e dois botões (OK e Cancelar).</li>
+             <li><strong>prompt()</strong>: Exibe uma caixa de entrada onde o usuário pode digitar um valor.</li>
+             </ul>
+                <p>Exemplo:</p>
+                    <div class="exemplo-saida">
+                    <pre>
+                    alert("Olá, mundo!"); // Exibe uma caixa de alerta com a mensagem "Olá, mundo!"
+                    confirm("Você está gostando do curso?"); // Exibe uma caixa de  confirmação
+                    prompt("Digite seu nome: "); // Exibe uma caixa de entrada para o usuário digitar seu nome
+                    </pre>
+                    </div>
+                <p>Exemplo de uso:</p>
+                    <div class="exemplo-saida">
+                    <pre>
+                      let nome = prompt("Digite seu nome: "); // Solicita o nome do usuário
+                      alert("É um grande prazer te conhecer " + nome); // Exibe uma mensagem de boas-vindas com o nome do usuário
+                    </pre>
+                    </div>
+    </div>
+    </div>
+
+    <script>
+        // comentario em javascript
+        // alert("Olá mundo!")
+        // window.alert("Olá mundo!")
+        // window.confirm("Você está gostando do curso?")
+        // window.prompt("Digite seu nome: ")
+        // window.alert("É um grande prazer te conhecer " + nome)
+        // window.alert("É um grande prazer te conhecer " + window.prompt("Digite seu nome: "))
+        // window.alert("É um grande prazer te conhecer " + window.prompt("Digite seu nome: "))
+        //var nome = window.prompt("Digite seu nome: ")
+       // window.alert("É um grande prazer te conhecer " + nome)
+
+    </script>
+</body>
+</html>

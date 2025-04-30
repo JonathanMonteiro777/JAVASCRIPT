@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <link rel="stylesheet" href="ex02.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios Práticos</h1>
+    </header>
+    <main>
+        <section id="ex01">
+            <h2>Exercício 1</h2>
+            <h2>Somando valores</h2>
+            <p>Crie um formulário com dois campos de entrada numéricos e um botão. Quando o botão for clicado, some os valores dos campos e exiba o resultado em um alerta.</p>
+            <p>Utilize o método <code>getElementById</code> para acessar os campos de entrada e o botão.</p>
+            <p>Utilize o método <code>parseInt</code> para converter os valores dos campos de entrada em números inteiros.</p>
+
+            <!--Input para receber os valores-->
+            <input type="number" name="valor1" id="valor1" placeholder="Valor 1">
+            <input type="number" name="valor2" id="valor2" placeholder="Valor 2">
+            <input type="button" value="Somar" onclick="somar()">
+            <p>Resultado: <span id="resultado"></span></p>
+        </section>
+        <!-- Exercicio 2 Propagação de eventos-->
+        <section class="propagacao">
+            <h2>Propagação de Eventos (Bubbling)</h2>
+            <div id="divPai">
+                <button id="botaoFilho">Clique em Mim!</button>
+            </div>
+            <p id="mensagemPropagacao"></p>
+        </section>
+
+        <!-- Exercicio 3 Prevenindo o comportamento padrão-->
+        <section class="prevencao-padrao">
+            <h2>Previnindo o Comportamento Padrão</h2>
+            <a href="https://www.google.com" id="linkGoogle">Ir para o Google</a>
+            <p id="mensagemLink"></p>
+        </section>
+
+        <!-- Exercício 4 Delegação de Eventos-->
+         <section class="delegacao">
+            <h2>Delegação de Eventos</h2>
+            <ul id="listaDelegacao">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <button id="adicionarItemDelegado">Adicionar Item</button>
+            <p id="mensagemDelegacao"></p>
+         </section>
+
+
+        <script src="ex02.js"> </script>
+    </main>
+</body>
+</html>

@@ -1,0 +1,155 @@
+/* seletor global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+.cabecalho {
+    background-color: #e5e8fa;
+    padding: 10px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    border-radius: 2%;
+}
+/* título cabeçalho */
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+} 
+
+/* conteúdo principal */
+main  {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+/* parágrafo */
+p {
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+/* seção de apresentação*/
+.secao-apresentacao {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+/* título seção */
+.titulo-apresentacao {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* seção exercícios*/
+.secao-exercicios {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+.paragrafo-exercicios {
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* título seção exercícios */
+.titulo-exercicios {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.lista-exercicios {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 1.1em;
+}
+/*exercício 1*/
+.exercicio-1 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;   
+}
+/* div exercicio 1*/
+.div-exercicio-1 {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+/* exercício 2*/
+.exercicio-2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+/* div exercicio 2*/
+.div-exercicio-2 {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+/* exercício 3*/
+.exercicio-3 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+/* div exercicio 3*/
+.div-exercicio-3 {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+/* Footer */
+footer .rodape {
+    background-color: #e5e8fa;
+    padding: 10px 0;
+    border-radius: 2%;
+    margin-top: 20px;
+}
+.rodape p {
+    color: #333;
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+}
+
+

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 7 javascript </title>
+</head>
+<body>
+    <h1>Operadores em JavaScript (parte 2)</h1>
+
+    <h2>Operadores Relacionais</h2>
+    <p>Os operadores relacionais são usados para comparar dois valores.</p>
+    <ul>
+        <li><strong>Igualdade (==)</strong>: Verifica se dois valores são iguais.</li>
+        <li><strong>Desigualdade (!=)</strong>: Verifica se dois valores são diferentes.</li>
+        <li><strong>Idêntico (===)</strong>: Verifica se dois valores são iguais e do mesmo tipo.</li>
+        <li><strong>Não idêntico (!==)</strong>: Verifica se dois valores são diferentes ou de tipos diferentes.</li>
+        <li><strong>Maior que (>)</strong>: Verifica se um valor é maior que outro.</li>
+        <li><strong>Menor que (<)</strong>: Verifica se um valor é menor que outro.</li>
+        <li><strong>Maior ou igual (>=)</strong>: Verifica se um valor é maior ou igual a outro.</li>
+        <li><strong>Menor ou igual (<=)</strong>: Verifica se um valor é menor ou igual a outro.</li>
+    </ul>
+    <hr>
+
+    <p>Exemplo:</p>
+    <pre>
+        let a = 5;
+        let b = 10;
+        let c = '5';
+
+        console.log(a == c); // true   (igualdade)
+        console.log(a === c); // false (idêntico)
+        console.log(a != b); // true   (desigualdade)
+        console.log(a !== c); // true  (não idêntico)
+        console.log(a > b); // false   (maior que)
+        console.log(a < b); // true    (menor que)
+        console.log(a >= c); // true   (maior ou igual)
+        console.log(a <= b); // true   (menor ou igual)
+    </pre>
+
+    <p>Exemplo de uso (maior ou igual):</p>
+    <pre>
+        let idade = 18;
+        let idadeMinima = 18;
+
+        if (idade >= idadeMinima) {
+            console.log("Você é maior de idade.");
+        } else {
+            console.log("Você é menor de idade.");
+        }
+    </pre>
+
+
+    <p>Exemplo de uso (idêntico):</p>
+    <pre>
+        let senha = prompt("Digite a senha:");
+        let senhaCorreta = "1234";
+
+        if (senha === senhaCorreta) {
+            console.log("Senha correta.");
+        } else {
+            console.log("Senha incorreta.");
+        }
+    </pre>
+    
+    <p>Exemplo de uso (igualdade):</p>
+    <pre>
+        let a = 5;
+        let b = 10;
+
+        if (a == b) {
+            console.log("Os valores são iguais.");
+        } else {
+            console.log("Os valores são diferentes.");
+        }
+    </pre>
+   
+    <p>Exemplo de uso (não idêntico):</p>
+    <pre>
+        let a = 5;
+        let b = 10;
+
+        if (a !== b) {
+            console.log("Os valores não são idênticos.");
+        } else {
+            console.log("Os valores são idênticos.");
+        }
+    </pre>
+
+    <p>Exemplo de uso (desigualdade):</p>
+    <pre>
+        let a = 5;
+        let b = 10;
+
+        if (a != b) {
+            console.log("Os valores são diferentes.");
+        } else {
+            console.log("Os valores são iguais.");
+        }
+    </pre>
+
+    <p>Exemplo de uso (maior que):</p>
+    <pre>
+        let a = 5;
+        let b = 10;
+
+        if (a > b) {
+            console.log("a é maior que b.");
+        } else {
+            console.log("a não é maior que b.");
+        }
+    </pre>
+
+    <p>Exemplo de uso (menor que):</p>
+    <pre>
+        let a = 5;
+        let b = 10;
+
+        if (a < b) {
+            console.log("a é menor que b.");
+        } else {
+            console.log("a não é menor que b.");
+        }
+    </pre>
+
+    <p>Exemplo de uso (menor ou igual):</p>
+    <pre>
+        let a = 5;
+        let b = 10;
+
+        if (a <= b) {
+            console.log("a é menor ou igual a b.");
+        } else {
+            console.log("a não é maenorou igual a b.");
+        }
+    </pre>
+    <hr>
+
+    <h2>Operadores Lógicos</h2>
+    <p>Os operadores lógicos são usados para combinar expressões booleanas.</p> 
+    <ul>
+        <li><strong>E (&&)</strong>: Retorna true se ambas as expressões forem verdadeiras.</li>
+        <li><strong>OU (||)</strong>: Retorna true se pelo menos uma das expressões for verdadeira.</li>
+        <li><strong>NEGAÇÃO (!)</strong>: Inverte o valor lógico da expressão.</li>
+    </ul>
+
+    <p>Exemplo:</p>
+    <pre>
+        let a = true;
+        let b = false;
+
+        console.log(a && b); // false (E)
+        console.log(a || b); // true  (OU)
+        console.log(!a); // false (NEGAÇÃO)
+        console.log(!b); // true  (NEGAÇÃO)
+        console.log(a && !b); // true (E com negação)
+        console.log(a || !b); // true (OU com negação)
+    </pre>
+
+    <p>Exemplo de uso (&&):</p>
+    <pre>
+        let idade = 18;
+        let temPermissao = true;
+
+        if (idade >= 18 && temPermissao) {
+            console.log("Você pode entrar.");
+        } else {
+            console.log("Você não pode entrar.");
+        }
+    </pre>
+
+    <p>Exemplo de uso (||):</p>
+    <pre>
+        let usuario = "admin";
+        let senha = "1234";
+
+        if (usuario === "admin" || senha === "1234") {
+            console.log("Acesso permitido.");
+        } else {
+            console.log("Acesso negado.");
+        }
+    </pre>
+
+    <p>Exemplo de uso (!):</p>
+    <pre>
+        let usuarioLogado = false;
+
+        if (!usuarioLogado) {
+            console.log("Você não está logado.");
+        } else {
+            console.log("Você está logado.");
+        }
+    </pre>
+
+    <p>Exemplo de uso (&& com negação):</p>
+    <pre>
+        let idade = 18;
+        let temPermissao = false;
+
+        if (idade >= 18 && !temPermissao) {
+            console.log("Você pode entrar.");
+        } else {
+            console.log("Você não pode entrar.");
+        }
+    </pre>
+    <hr>
+
+    <h2>Operador Ternário</h2>
+
+    <p>O operador ternário é uma forma concisa de escrever uma expressão condicional.</p>
+    
+
+    <p>Ele tem a seguinte sintaxe:</p>
+    <pre>
+        condição ? valorSeVerdadeiro : valorSeFalso;
+    </pre>
+    <p>Exemplo:</p>
+    <pre>
+        let idade = 18;
+        let resultado = (idade >= 18) ? "Maior de idade" : "Menor de idade";
+        console.log(resultado); // "Maior de idade"
+    </pre>
+
+    <p>Ele é uma alternativa ao uso de if-else e é útil para atribuir valores com base em uma condição.</p>
+    <p>O operador ternário é chamado assim porque ele tem três partes: uma condição, um valor se a condição for verdadeira e um valor se a condição for falsa.</p>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <link rel="stylesheet" href="ex01.css">
+</head>
+<body>
+    <header>
+        <h1>Iniciando estudos com DOM</h1>
+    </header>
+    <main>
+        <!-- Introdução ao DOM -->
+        <section class="intro">
+        <h2>Introdução ao DOM</h2>
+        <p>O DOM (Document Object Model) é uma interface de programação que permite acessar e manipular o conteúdo, a estrutura e o estilo de um documento HTML ou XML. Com o DOM, você pode alterar elementos, adicionar novos elementos, remover elementos existentes e muito mais.</p>
+        <p>O DOM é representado como uma árvore de nós, onde cada nó representa um elemento ou um texto no documento. Cada elemento HTML é um nó na árvore, e você pode navegar por essa árvore para acessar e modificar os elementos.</p>
+        </section>
+
+        <!-- Manipulando o DOM com JavaScript -->
+        <section class="manipulando-dom">
+        <h2>Manipulando o DOM com JavaScript</h2>
+        <p>O JavaScript é a linguagem de programação mais comum usada para manipular o DOM. Com o JavaScript, você pode selecionar elementos, alterar seus atributos, adicionar eventos e muito mais.</p>
+        <p>Para começar a trabalhar com o DOM, você pode usar métodos como <code>document.getElementById()</code>, <code>document.querySelector()</code> e <code>document.createElement()</code>. Esses métodos permitem que você selecione elementos existentes ou crie novos elementos no documento.</p>
+        <p>Além disso, você pode usar propriedades como <code>innerHTML</code>, <code>textContent</code> e <code>style</code> para alterar o conteúdo e o estilo dos elementos selecionados.</p>
+        </section>
+
+        <!-- Exemplo de manipulação do DOM -->
+        <section class="contador">
+        <h2>Contador de Cliques</h2>
+        <button id="btnContador">Clique Aqui</button>
+        <p id="contador">Você clicou 0 vezes</p>
+        </section>
+
+        <!-- Alterando a Visibilidade de um Elemento -->
+        <section class="leia-mais">
+        <h2>Leia Mais</h2>
+        <p id="textoEscondido">Este é um texto que pode ser ocultado ou exibido.</p>
+        <button id="btnLeiaMais">Leia Mais</button>
+        </section>
+
+        <!-- Adicionando Itens a uma Lista Dinamica -->
+        <section class="lista-dinamica">
+        <h2>Adicionar à Lista</h2>
+        <input type="text" id="novoItemTexto" placeholder="Digite um item">
+        <button id="btnAdicionarItem">Adicionar</button>
+        <ul id="listaItens"></ul>
+        </section>
+
+        <section>
+            <div>
+                
+            </div>
+        </section>
+
+        <script src="ex01.js"></script>
+    </main>
+    
+</body>
+</html>
